@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html ng-app="ModuleName" class="juggernaut responsive grid_940">
+<head>
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="theme-color" content="#f0141e">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="content-type" content="text/html;charset=utf-8" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Start at the Marvel.com comics landing page to map out your adventure into the famous Marvel universe � whether you prefer print or digital, we have it here." />
+    <meta name="keywords" content="comic books, digital, print, news, characters" />
+    <link rel="stylesheet" type="text/css" media="all" href="http://i.annihil.us/u/prod/marvel/s/css/b5803a5172c70418c3f16964e9d2236e.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="http://i.annihil.us/u/prod/marvel/s/css/a3c4b79af080e416c2b74f9f763791b5.css" />
+
+
+
+
+
+    <script type="text/javascript" src="http://i.annihil.us/u/prod/marvel/s/js/d3223c949ff71f0d82eb87ce2384b1e4.js"></script>
+    <script type="text/javascript" src="http://i.annihil.us/u/prod/marvel/s/js/a0c636fc0457f8f5b31b6defaffde3f0.js"></script>
+
+    <title>Comics | Marvel.com</title>
+    <link href="http://marvel.com/comics" rel="canonical"/>
+    <style>
+        body { background-color: #fff; }
+        .btn {
+            border: 0;
+            cursor: pointer;
+            background: black;
+            padding: 0 7px;
+            position: relative;
+            margin: 10px 1px;
+            color: #FFF !important;
+            text-transform: uppercase;
+            font-family: "TradeGothicBold";
+            line-height: 47px;
+            vertical-align: middle;
+            font-size: 15px;
+            display: inline-block;
+            overflow: visible;
+            outline: 0;
+        }
+    </style>
+
+
+</head>
+<body id="comics-index" class="comics">
+    <div ng-view=""></div>
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="app/app.js"></script>
+    <script src="Controllers/HomeController.js"></script>
+    <script src="Controllers/ComicController.js"></script>
+    <script src="Services/marvelAPI.js"></script>
+    <script src="Scripts/jquery.autoellipsis-1.0.10.js"></script>
+</body>
+</html>

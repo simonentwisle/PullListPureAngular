@@ -1,0 +1,27 @@
+﻿<section class="module-group" id="modu-w-skin-ad">
+    <section class="module JMMultiRow moduColor_Light no-stripes" id="onsale">
+        <div class="grid-container">
+            <h2 class="module-header">May 18: New Releases </h2>
+            <div class="JCMultiRow  JCMultiRow-comic_issue" id="">
+                <div class="row-item comic-item" ng-repeat="comic in comics">
+                    <div class="row-item-image">
+                        <a href="#/comic/{{comic.id}}" class="row-item-image-url">
+                        <div class="row-item-image-border"></div>
+                        <img src="{{comic.thumbnail.path}}/portrait_incredible.jpg" alt="{{comic.title}}" title="{{comic.title}}" />
+                        </a>
+                    </div>
+                    <div class="row-item-text">
+                        <h5>
+                            <a class="meta-title" href="#/comic/{{comic.id}}">
+                                {{comic.title | uppercase}}
+                            </a>
+                        </h5>
+                        <p class="meta-creators" ng-repeat="creator in comic.creators.items">
+                            <a href="">{{creator.name}}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
