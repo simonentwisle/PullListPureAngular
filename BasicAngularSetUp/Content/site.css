@@ -1,0 +1,147 @@
+﻿:root {
+            font-size: 16px;
+        }
+
+        a {
+	        text-decoration: none;
+	        color: #000;
+        }
+
+        .grid_940 {
+            max-width: 940px;
+        }
+
+        .site-container, .grid-container {
+            margin: 0 auto;
+            position: relative;
+        }
+
+         h1, h2, h3, h4, h5, h6 {
+	        font-weight: normal;
+	        line-height: 1.2em;
+        }
+
+         /*************************************HOMEPAGE***********************************************/
+
+          html .module-header{
+	        font-size: 1.875rem;
+            }
+
+          .module {
+	        font-family: "TradeGothic";
+	        margin: 0;
+	        padding: 0;
+	        color: #000;
+	        position: relative;
+	        overflow: visible;
+	        margin-top: -1px;
+	        padding-top: 1px;
+            font-weight: normal;
+	        line-height: 1.2em;
+            }
+
+             .module-header{
+	        line-height: 1em;
+	        position: relative;
+	        font-family: "TradeGothicBold";
+	        letter-spacing: -1px;
+	        font-size:1.563rem;
+	        text-transform: uppercase;
+	        margin: 30px 0 30px 0;
+            font-weight: normal;
+	        line-height: 1.2em;
+            }
+
+         .module-header::before {
+	        content: "";
+	        position: absolute;
+	        top: 0;
+	        right: 100%;
+	        height: 77%;
+	        background: #000;
+	        width: 1000px;
+	        -webkit-transform: skew(-11deg,0);
+	        -ms-transform: skew(-11deg,0);
+	        transform: skew(-11deg,0);
+	        margin: 3px 12px 0 0;
+        }
+
+         .homepage-comic-text{
+             margin-bottom: 10px;
+         }
+
+         .homepage-comic-text h5 {
+            font-family: 'TradeGothicBold';
+            font-size: 1rem;
+            margin: 19px 0 4px;
+        }
+
+        .homepage-comic-text p {
+            line-height:0.4rem;
+        }
+
+            /*Comic style*/
+            .comic {
+	        width: 222px;
+	        float: left;
+	        font-family: 'TradeGothic';
+	        height: 480px;
+        }
+
+        .comic p {
+            font-size: 0.875rem;
+            margin: 0;
+            line-height: 1.2rem;
+        }
+
+        .comic .comic-image {
+            position: relative;
+            clear: both;
+            margin-bottom: 5px;
+        }
+
+        .comic .comic-image-url {
+            display: block;
+            position: relative;
+        }
+
+            .comic .comic-image-url::before {
+                content: "";
+                background: #bababa;
+                position: absolute;
+                width: 90%;
+                height: 100%;
+                top: 5px;
+                left: 6px;
+            }
+
+        .comic a.comic-image-url:hover::before {
+            background: transparent url("comic_background_png.png");
+            width:90%;
+        }
+
+        .comic .comic-image-border {
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #000;
+            -webkit-transition: border .2s linear;
+            transition: border .2s linear;
+            z-index: 1;
+        }
+
+        .comic a.comic-image-url:hover .comic-image-border {
+            border-width: 6px;
+        }
+
+        .comic img {
+            height: auto;
+            position: relative;
+            display: block;
+            width:90%;
+        }

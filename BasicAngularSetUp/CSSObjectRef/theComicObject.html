@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+          .comic{
+            width:216px;
+            float:left;
+        }
+
+        .comic p {
+	        font-size:0.875rem;
+	        margin: 0;
+            line-height:1.2rem;
+        }
+
+        .comic .comic-image {
+	        position: relative;
+	        clear: both;
+	        margin-bottom: 5px;
+        }
+
+        .comic .comic-image-url {
+	        display: block;
+	        position: relative;
+        }
+
+        .comic .comic-image-url::before {
+	        content: "";
+	        background: #bababa;
+	        position: absolute;
+	        width: 100%;
+	        height: 100%;
+	        top: 5px;
+	        left: 6px;
+        }
+
+        .comic a.comic-image-url:hover::before {
+	        background: transparent url("comic_background_png.png");
+        }
+
+        .comic .comic-image-border {
+	        position: absolute;
+	        width: 100%;
+	        height: 100%;
+	        bottom: 0;
+	        left: 0;
+	        -webkit-box-sizing: border-box;
+	        -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	        border: 1px solid #000;
+	        -webkit-transition: border .2s linear;
+	        transition: border .2s linear;
+	        z-index: 1;
+        }
+
+         .comic a.comic-image-url:hover .comic-image-border {
+	        border-width: 6px;
+        }
+
+        .comic img {
+	        height: auto;
+	        position: relative;
+	        display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>The Comic Object</h2>
+        <div class="comic">
+            <div class="comic-image">
+                <a href="#/comic/55827" class="comic-image-url">
+                    <div class="comic-image-border"></div>
+                    <img src="http://i.annihil.us/u/prod/marvel/i/mg/e/c0/5743747e68919/portrait_incredible.jpg" alt="Contest of Champions (2015) #9" title="Contest of Champions (2015) #9">
+                </a>
+            </div>
+        </div>
+</body>
+</html>

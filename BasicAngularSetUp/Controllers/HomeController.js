@@ -5,6 +5,14 @@
         .module("ModuleName")
         .controller("HomeController",homeController);
 
+    function chunk(arr, size) {
+        var newArr = [];
+        for (var i = 0; i < arr.length; i += size) {
+            newArr.push(arr.slice(i, i + size));
+        }
+        return newArr;
+    }
+
     function homeController($scope, marvelAPI) {
 
         $scope.comics = [];
@@ -26,6 +34,7 @@
                 $scope.comics.push(comic);
                 $scope.comics = $scope.comics;
             }
+            $scope.chunkedData = chunk($scope.comics, 20);
         };
 
         var onLoadComisComplete = function (data) {

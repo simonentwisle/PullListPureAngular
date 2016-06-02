@@ -9,6 +9,11 @@
 
         $scope.comics = [];
 
+        $scope.toggle = function () {
+            $('#short-text').toggle();
+            $('#long-text').toggle();
+        }
+
         function truncate(string) {
             if (string.length > 100)
                 return string.substring(0, 100) + '...';
@@ -124,6 +129,7 @@
 
         marvelAPI.getComicById(comicId)
         .then(onLoadComicComplete, onError);
-    };
+        };
+
 
 })();

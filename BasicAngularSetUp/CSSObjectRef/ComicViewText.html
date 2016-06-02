@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="../Content/fonts.css" rel="stylesheet" />
+    <script src="../Partials/Scripts/jquery-2.2.3.js"></script>
+    <style>
+        :root {
+            font-size: 16px;
+        }
+
+        body{
+            background-color:#000;
+            color:#fff;
+        }
+
+
+        a {
+	        text-decoration: none;
+	        color: #fff;
+        }
+
+        .grid_940 {
+            max-width: 940px;
+        }
+
+        .site-container, .grid-container {
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .comic-view-text{
+            font-family: "TradeGothic";
+            font-weight:normal;
+        }
+
+        .comic-view-text h1{
+            font-family: "TradeGothicBold";
+	        letter-spacing: -1px;
+            text-transform:uppercase;
+        }
+
+        a.lnk-more {
+	        color: #f0141e;
+	        cursor: pointer;
+        }
+    </style>
+    <script>
+        var Toggle = function () {
+            $('#short-text').toggle();
+            $('#long-text').toggle();
+        };
+
+       $('document').ready(function () {
+           document.getElementById("moreLink").addEventListener("click", Toggle);
+           document.getElementById("lessLink").addEventListener("click", Toggle);
+       });
+       
+
+    </script>
+</head>
+<body>
+    <div class="comic-view-text">
+        <div>
+            <h1 class="">The Punisher (2016) #2 </h1>
+        </div>
+
+        <div style="color: #fff;">
+            <div>
+                <strong>Published:</strong> May 25, 2016<br>
+                <strong>Writer:</strong>
+                <a  href="">Becky Cloonan</a>
+                <a  href="">Steve Dillon</a>
+                <br>
+                <strong>Penciller:</strong>
+                <br>
+                <strong>Artists:</strong>
+                <br>
+                <strong>Editor:</strong>
+                <a > Jacob Thomas</a>
+            </div>
+
+            <div>
+                <p id="short-text">
+                    ROAD TRIP
+                    Frank Castle’s hunt has taken him on the road, and bodies will be left in his wake. But wi...
+                    <a id="moreLink" class="lnk-more">more</a>
+                </p>
+                <p id="long-text" style="display: none">
+                    ROAD TRIP
+                    Frank Castle’s hunt has taken him on the road, and bodies will be left in his wake. But with a DEA agent closing in on him, things could get complicated…
+
+                    <a id="lessLink" class="lnk-more">less</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

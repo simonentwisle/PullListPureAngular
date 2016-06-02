@@ -66,13 +66,27 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootstrap.html" />
+    <Content Include="comicViewTest.html" />
+    <Content Include="comic_background_png.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\marvelcss.css" />
+    <Content Include="Content\fonts.css" />
+    <Content Include="Content\site.css" />
+    <Content Include="Content\site.old.css" />
     <Content Include="Controllers\ComicController.js" />
+    <Content Include="CSSObjectRef\ComicViewText.html" />
+    <Content Include="CSSObjectRef\comic_background_png.png" />
+    <Content Include="CSSObjectRef\homepageComicText.html" />
+    <Content Include="CSSObjectRef\theBackToButton.html" />
+    <Content Include="CSSObjectRef\theComicObject.html" />
+    <Content Include="CSSObjectRef\TheHeaders.html" />
+    <Content Include="daredevil.jpg" />
+    <Content Include="empty.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="hoverEffect.html" />
     <Content Include="md5.js" />
     <Content Include="packages.config" />
     <Content Include="Scripts\angular-route.js" />
@@ -85,6 +99,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\PublishProfiles\MarvelPullList - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -109,7 +124,6 @@
     <Content Include="Partials\comicView.html" />
     <Content Include="Scripts\jquery.autoellipsis-1.0.10.js" />
     <Content Include="Services\marvelAPI.js" />
-    <Content Include="test.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
