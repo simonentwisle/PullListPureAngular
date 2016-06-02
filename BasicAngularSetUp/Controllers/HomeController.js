@@ -15,7 +15,19 @@
 
     function homeController($scope, marvelAPI) {
 
+
+        alert(document.documentElement.clientWidth);
         $scope.comics = [];
+
+        var numberOfComicsToReturnInAChunk = 4;
+
+        if (document.documentElement.clientWidth <= 885) {
+            numberOfComicsToReturnInAChunk = 3;
+        }
+
+        if (document.documentElement.clientWidth <= 668) {
+            numberOfComicsToReturnInAChunk = 2;
+        }
 
         var loadComics = function () {
             var theData = $scope.newReleases.data.results;
@@ -34,7 +46,7 @@
                 $scope.comics.push(comic);
                 $scope.comics = $scope.comics;
             }
-            $scope.chunkedData = chunk($scope.comics, 20);
+            $scope.chunkedData = chunk($scope.comics, numberOfComicsToReturnInAChunk);
         };
 
         var onLoadComisComplete = function (data) {

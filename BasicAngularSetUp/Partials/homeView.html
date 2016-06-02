@@ -1,53 +1,24 @@
-﻿
-<style>
-    :root {
-        font-size: 16px;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: normal;
-        line-height: 1.2em;
-    }
-
-    .homepage-comic-text h5 {
-        font-family: 'TradeGothicBold';
-        font-size: 1rem;
-        margin: 19px 0 4px;
-    }
-
-    a {
-        text-decoration: none;
-        color: #000;
-    }
-
-    .homepage-comic-text p {
-        line-height: 0.4rem;
-    }
-</style>
-
-
-
-
-            
-<h2 class="module-header">May 18: New Releases </h2>
+﻿ <h2 class="module-header">May 18: New Releases </h2>
  <div class="container-fluid">
-    <div class="row" style="clear:both" ng-repeat="rows in chunkedData">
-        <div class="comic col-lg-4" ng-repeat="comic in rows">
-            <div class="comic-image">
-                <a href="#/comic/{{comic.id}}" class="comic-image-url">
-                    <div class="comic-image-border"></div>
-                    <img src="{{comic.thumbnail.path}}/portrait_incredible.jpg" alt="{{comic.title}}" title="{{comic.title}}" />
-                </a>
-            </div>
-            <div class="homepage-comic-text">
-                <h5>
-                    <a class="meta-title" href="#/comic/{{comic.id}}">
-                        {{comic.title | uppercase}}
+    <div ng-repeat="rows in chunkedData">
+        <div class="row" style="clear:both">
+            <div class="comic col-lg-4" ng-repeat="comic in rows">
+                <div class="comic-image">
+                    <a href="#/comic/{{comic.id}}" class="comic-image-url">
+                        <div class="comic-image-border"></div>
+                        <img src="{{comic.thumbnail.path}}/portrait_incredible.jpg" alt="{{comic.title}}" title="{{comic.title}}" />
                     </a>
-                </h5>
-                <p ng-repeat="creator in comic.creators.items">
-                    <a href="">{{creator.name}}</a>
-                </p>
+                </div>
+                <div class="homepage-comic-text">
+                    <h5>
+                        <a class="meta-title" href="#/comic/{{comic.id}}">
+                            {{comic.title | uppercase}}
+                        </a>
+                    </h5>
+                    <p ng-repeat="creator in comic.creators.items">
+                        <a href="">{{creator.name}}</a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>

@@ -3636,6 +3636,7 @@ tbody.collapse.in {
   margin-bottom: 2px;
 }
 @media (min-width: 768px) {
+
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto;
@@ -6758,3 +6759,4 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
